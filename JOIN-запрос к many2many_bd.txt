@@ -1,0 +1,4 @@
+SELECT Students.*, Courses.*
+FROM student_course
+JOIN Courses on Courses.pk_course = student_course.fk_course
+JOIN Students on Students.pk_students = student_course.fk_students
